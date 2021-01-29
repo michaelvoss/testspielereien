@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
+	<classpathentry kind="lib" path="D:/Sammelordner/javaluator-3.0.2.jar"/>
+	<classpathentry kind="lib" path="D:/Sammelordner/exp4j-0.4.8.jar"/>
+	<classpathentry kind="lib" path="D:/Sammelordner/EvalEx-2.1.jar"/>
+	<classpathentry kind="lib" path="D:/Sammelordner/groovy-2.5.8.jar"/>
+	<classpathentry kind="lib" path="D:/Sammelordner/jackson-annotations-2.11.2.jar"/>
+	<classpathentry kind="lib" path="D:/Sammelordner/jackson-core-2.11.2.jar"/>
+	<classpathentry kind="lib" path="D:/Sammelordner/jackson-databind-2.11.2.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
