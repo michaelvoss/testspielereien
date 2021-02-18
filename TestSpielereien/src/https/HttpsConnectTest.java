@@ -30,7 +30,7 @@ public class HttpsConnectTest {
 	}
 	
 	public void createConnection(String urlInput) throws Exception {
-		System.out.println(System.getProperty("java.version"));
+		System.out.println("JRE-Version " + System.getProperty("java.version"));
 		System.out.println("Verbinde mit " + urlInput);
 
 		String phrase = this.username + ":" + this.password;
@@ -50,6 +50,7 @@ public class HttpsConnectTest {
 			conn.setRequestProperty("Content-Type", "application/json");
 			conn.setConnectTimeout(5000);
 			conn.setReadTimeout(5000);
+			conn.setDoOutput(true);
 
 			System.out.println("Starte Verbindungsaufbau");
 			conn.connect();
