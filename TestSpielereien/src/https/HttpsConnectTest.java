@@ -30,6 +30,7 @@ public class HttpsConnectTest {
 	}
 	
 	public void createConnection(String urlInput) throws Exception {
+		System.out.println(System.getProperty("java.version"));
 		System.out.println("Verbinde mit " + urlInput);
 
 		String phrase = this.username + ":" + this.password;
@@ -79,7 +80,5 @@ public class HttpsConnectTest {
 			e.printStackTrace();
 			throw e;
 		}
-
 	}
-
 }
