@@ -37,5 +37,59 @@ public class RegExPlayground {
 		}
 		Assertions.assertEquals(null, possibleMatch);
 	}
+	
+	@Test 
+	public void pruefung1() {
+		String cand = "201234567801";
+		String pattern = "^.*01$";
+		boolean res = cand.matches(pattern);
+		System.out.println("Prüfe " + cand + " gegen Regex " + pattern + " --> " + res);
+		Assertions.assertTrue(res, pattern + " passt nicht auf " + cand);
+	}
 
+	@Test 
+	public void pruefung2() {
+		String cand = "201234567802";
+		String pattern = "^.*01$";
+		boolean res = cand.matches(pattern);
+		System.out.println("Prüfe " + cand + " gegen Regex " + pattern + " --> " + res);		
+		Assertions.assertFalse(res, pattern + " passt nicht auf " + cand);
+	}
+	
+	@Test 
+	public void pruefung3() {
+		String cand = "201234567801";
+		String pattern = "^\\d{10}01$";
+		boolean res = cand.matches(pattern);
+		System.out.println("Prüfe " + cand + " gegen Regex " + pattern + " --> " + res);		
+		Assertions.assertTrue(res, pattern + " passt nicht auf " + cand);
+	}
+	
+	@Test 
+	public void pruefung4() {
+		String cand = "201234567801";
+		String pattern = "^201234567801$";
+		boolean res = cand.matches(pattern);
+		System.out.println("Prüfe " + cand + " gegen Regex " + pattern + " --> " + res);		
+		Assertions.assertTrue(res, pattern + " passt nicht auf " + cand);
+	}	
+	
+	@Test 
+	public void pruefung5() {
+		String cand = "20123456701";
+		String pattern = "^\\d{10}01$";
+		boolean res = cand.matches(pattern);
+		System.out.println("Prüfe " + cand + " gegen Regex " + pattern + " --> " + res);		
+		Assertions.assertFalse(res, pattern + " passt nicht auf " + cand);
+	}
+	
+	@Test 
+	public void pruefung6() {
+		String cand = "201234567801";
+		String pattern = "^\\d{9}01$";
+		boolean res = cand.matches(pattern);
+		System.out.println("Prüfe " + cand + " gegen Regex " + pattern + " --> " + res);		
+		Assertions.assertFalse(res, pattern + " passt nicht auf " + cand);
+	}
+	
 }
