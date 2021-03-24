@@ -92,4 +92,13 @@ public class RegExPlayground {
 		Assertions.assertFalse(res, pattern + " passt nicht auf " + cand);
 	}
 	
+	@Test 
+	public void pruefung7() {
+		String cand = "201234567801";
+		String pattern = "^201234567801$";
+		boolean res = cand.matches(pattern);
+		System.out.println("Prüfe " + cand + " gegen Regex " + pattern + " --> " + res);		
+		Assertions.assertTrue(res, pattern + " passt nicht auf " + cand);
+	}
+	
 }
